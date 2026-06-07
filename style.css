@@ -23,3 +23,8 @@
     left:-8px;
     top:8px;
 }
+
+.timeline-item h3{
+    margin-bottom:8px;
+    color:#93c5fd;
+}
