@@ -7,14 +7,18 @@
 
 body {
     background:
-        radial-gradient(circle at top left, rgba(59,130,246,.15), transparent 35%),
-        radial-gradient(circle at top right, rgba(168,85,247,.12), transparent 35%),
-        linear-gradient(180deg, #0f172a 0%, #111827 100%);
+        radial-gradient(circle at top left, rgba(124,58,237,.25), transparent 40%),
+        radial-gradient(circle at top right, rgba(59,130,246,.20), transparent 40%),
+        linear-gradient(
+            180deg,
+            #1a1333 0%,
+            #141b2d 50%,
+            #0f172a 100%
+        );
 
     color: #e5e7eb;
     font-family: Inter, Arial, sans-serif;
     line-height: 1.7;
-    overflow-x: hidden;
 }
 
 header {
@@ -73,20 +77,9 @@ h2 {
 }
 
 .avatar {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 30px auto;
-
-    border: 5px solid #2563eb;
-
     box-shadow:
-        0 0 25px rgba(37,99,235,.5),
-        0 0 60px rgba(37,99,235,.25);
-
-    transition: .4s;
+        0 0 40px rgba(124,58,237,.35),
+        0 0 80px rgba(59,130,246,.20);
 }
 
 .avatar:hover {
@@ -94,24 +87,15 @@ h2 {
 }
 
 .badge {
-    background: linear-gradient(
-        90deg,
-        #2563eb,
-        #7c3aed
-    );
-
-    width: fit-content;
-    margin: 25px auto 35px;
-
-    padding: 14px 26px;
-
-    border-radius: 999px;
-
-    font-weight: 700;
+    background:
+        linear-gradient(
+            90deg,
+            #7c3aed,
+            #3b82f6
+        );
 
     box-shadow:
-        0 0 20px rgba(59,130,246,.35),
-        0 0 40px rgba(124,58,237,.25);
+        0 0 30px rgba(124,58,237,.35);
 }
 .stats {
     display: flex;
@@ -134,21 +118,15 @@ h2 {
 .project-card,
 .timeline-item,
 .demo-card {
+    background: rgba(255,255,255,.04);
 
-    background: rgba(17,24,39,.75);
-
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(20px);
 
     border: 1px solid rgba(255,255,255,.08);
 
-    border-radius: 18px;
+    border-radius: 24px;
 
-    padding: 25px;
-
-    margin-bottom: 20px;
-
-    box-shadow:
-        0 8px 30px rgba(0,0,0,.25);
+    padding: 28px;
 
     transition: .3s;
 }
