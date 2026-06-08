@@ -1,283 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namcamm's Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#abstract">Abstract</a></li>
-                <li><a href="#arc">Arc</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
+body {
+    background: #0b0f19;
+    color: #e5e7eb;
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.7;
+}
 
-        <section id="about">
-            <h1>Namcamm</h1>
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(11, 15, 25, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
 
-            <p class="tagline">
-                <strong>Web3 Builder • Community Lead • Researcher</strong>
-            </p>
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 18px;
+}
 
-            <img src="avatar.png" alt="Namcamm">
+nav a {
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: .3s;
+}
 
-            <div class="badge">
-                Currently Building on Arc • 2 Live DApps
-            </div>
+nav a:hover {
+    color: #60a5fa;
+}
 
-            <p>
-                I entered the crypto market around 2019, starting with futures trading before moving into spot trading.
-                Over the years, the market has given me extensive experience, knowledge, and a deep understanding of the Web3 ecosystem.
-            </p>
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
 
-            <p>
-                Around 2020, I began focusing more seriously on researching blockchain projects as trends like retroactive rewards and degen culture started growing rapidly.
-                Since then, I have actively explored and participated in many Layer 1 and Layer 2 ecosystems such as <em>Optimism, Arbitrum, Starknet, Aptos, and Sui</em>.
-            </p>
+section {
+    margin-bottom: 80px;
+}
 
-            <p>
-                I have also been actively involved in GameFi and community-driven projects including <strong>Moca Network, Somnia, Moonveil, and Oh Baby Games</strong>, alongside many other ecosystems.
-            </p>
-        </section>
+h1 {
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-        <section id="experience">
-            <h2>Experience in Crypto & Web3</h2>
+h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #fff;
+}
 
-            <ul>
-                <li>🎯 Futures trading</li>
-                <li>📈 Spot trading</li>
-                <li>🔬 Researching blockchain projects</li>
-                <li>🌐 Exploring Layer 1 and Layer 2 ecosystems</li>
-                <li>🎮 GameFi and community-driven projects</li>
-            </ul>
-            
-            <p>Notable projects I've contributed to:</p>
-            <ul>
-                <li>Moca Network (Community Manager)</li>
-                <li>Somnia (Early Contributor)</li>
-                <li>Moonveil (Gameplay Tester)</li>
-                <li>Oh Baby Games (Advisor)</li>
-            </ul>
-        </section>
+.tagline {
+    text-align: center;
+    color: #60a5fa;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
 
-        <section id="timeline">
-            <h2>My Web3 Journey</h2>
-
-            <div class="timeline-item">
-                <h3>2019</h3>
-                <p>🚀 Started Crypto Journey</p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2020 - 2021</h3>
-                <p>
-                    💹 Active in Futures and Spot Trading, building a strong understanding 
-                    of market cycles, risk management, and crypto investing
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2022</h3>
-                <p>
-                    🔗 Focused on Layer 1 and Layer 2 ecosystems including Optimism, 
-                    Arbitrum, Starknet, Aptos, Sui, and many other emerging blockchain networks
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2023</h3>
-                <p>
-                    👾 Expanded into GameFi through projects such as Aavegotchi,
-                    STEPN, Moca Network, and other gaming ecosystems
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2024</h3>
-                <p>
-                    🤝 Shifted focus toward community building, ecosystem participation,
-                    educational content, and networking
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2025</h3>
-                <p>
-                    🌱 Founded and developed OneHoard, a community focused on crypto research,
-                    ecosystem discovery, and knowledge sharing
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2026</h3>
-                <p>
-                    ⚡ Active contributor within the Abstract ecosystem and builder within Arc.
-                    Built Arc Bridge and GM DApp while continuing community growth and ecosystem participation
-                </p>
-            </div>
-        </section>
-
-        <section id="abstract">
-
-            <h2>🏆 Abstract Journey</h2>
-
-            <div class="project-card">
-
-                <video autoplay muted loop playsinline controls>
-                    <source src="abstract-demo.mp4" type="video/mp4">
-                </video>
-
-                <h3>Active Contributor</h3>
-
-                <p>
-                    Active contributor within the Abstract ecosystem through community engagement,
-                    educational content, ecosystem support and onchain participation.
-                </p>
-
-                <ul>
-                    <li><strong>Discord Role:</strong> Quant</li>
-                    <li><strong>Current Rank:</strong> Platinum II</li>
-                    <li><strong>Weekly Active DApps:</strong> Onchain Hero</li>
-                    <li><strong>Weekly Active DApps:</strong> Tollan Universe</li>
-                </ul>
-
-            </div>
-
-        </section>
-
-        <section id="arc">
-
-            <h2>⚡ Arc Builder Journey</h2>
-
-            <div class="project-card">
-
-                <p>
-                    Building applications and tools within the Arc ecosystem.
-                </p>
-
-                <div class="demo-grid">
-
-                    <div class="demo-card">
-
-                        <video autoplay muted loop playsinline controls>
-                            <source src="arc-bridge-demo.mp4" type="video/mp4">
-                        </video>
-
-                        <h3>🌉 Arc Bridge</h3>
-
-                        <p>
-                            Cross-chain bridge powered by Circle CCTP.
-                        </p>
-
-                        <a href="https://arc-bridge-2qx.pages.dev/" target="_blank">
-                            Open DApp
-                        </a>
-
-                    </div>
-
-                    <div class="demo-card">
-
-                        <video autoplay muted loop playsinline controls>
-                            <source src="gm-demo.mp4" type="video/mp4">
-                        </video>
-
-                        <h3>👋 GM DApp</h3>
-
-                        <p>
-                            Daily engagement application built for Arc users.  
-                        </p>
-
-                        <a href="https://gm-arc.pages.dev/" target="_blank">
-                            Open DApp  
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="community">
-            <h2>Community & Social Contributions</h2>
-
-            <h3>Building Community - OneHoard 🌱</h3>
-
-            <p>
-                I am building and growing the <strong>OneHoard</strong> community — a place where members come together to learn, research, and discuss the crypto market and Web3 ecosystem.
-            </p>
-
-            <p>
-                Our community currently has <strong>100+ active members</strong> who regularly participate in:
-            </p>
-
-            <ul>
-                <li>📈 Market and project research discussions</li>  
-                <li>🌐 Web3 ecosystem sharing</li>
-                <li>🎮 Game Night events</li>
-                <li>🎙️ Talkshows and community sessions</li>
-            </ul>
-
-            <h3>Social Contributions</h3>
-
-            <p>
-                In recent years, I have focused more on building my presence and contributing actively on X/Twitter while participating onchain across different ecosystems.
-            </p>
-
-            <p>Community milestones:</p>
-
-            <ul>
-                <li>🌟 OG Member of Somnia</li>
-                <li>🌟 OG Member of Oh Baby Games</li>  
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact & Links</h2>
-
-            <ul>
-                <li>🐦 <a href="https://x.com/namcamjav" target="_blank">Personal X Account</a></li>
-                <li>🐦 <a href="https://x.com/OneHoardCrypto" target="_blank">OneHoard X Account</a></li>  
-                <li>💻 <a href="https://github.com/thuogthuong" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Namcamm. All rights reserved.</p>
-    </footer>
-</body>
-</html>
 .avatar {
     width: 180px;
     height: 180px;
-    object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
+    border: 4px solid #2563eb;
+    box-shadow: 0 0 40px rgba(37,99,235,.4);
 }
 
-.demo-card video {
+.badge {
+    background: linear-gradient(90deg,#2563eb,#7c3aed);
+    width: fit-content;
+    margin: 20px auto 35px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.project-card,
+.timeline-item,
+.demo-card {
+    background: #111827;
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.project-card:hover,
+.demo-card:hover {
+    transform: translateY(-3px);
+    transition: .3s;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 20px;
+}
+
+.demo-card h3 {
+    margin-bottom: 12px;
+}
+
+.demo-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.demo-card a:hover {
+    background: #1d4ed8;
+}
+
+.demo-card video,
+.project-card video {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 14px;
     margin-top: 15px;
 }
 
-.demo-card {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.timeline-item {
+    border-left: 4px solid #2563eb;
 }
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#contact li {
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    color: #94a3b8;
+}
+```
