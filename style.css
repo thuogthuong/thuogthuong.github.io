@@ -304,3 +304,8 @@ nav a:hover::after {
     max-width: 850px;
     margin: 0 auto 20px;
 }
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
