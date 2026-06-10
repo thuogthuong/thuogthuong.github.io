@@ -300,9 +300,22 @@ nav a:hover::after {
     max-width: 850px;
     margin: 0 auto 20px;
 }
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+.demo-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    align-items:start;
+}
+
+.demo-card{
+    min-width:0;
+}
+
+.demo-card video{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-top:15px;
 }
 
