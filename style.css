@@ -307,10 +307,8 @@ nav a:hover::after {
 .demo-card video,
 .project-card video{
     width:100%;
-    aspect-ratio:16/9;
-    object-fit:contain;
+    height:auto;
     border-radius:14px;
     margin-top:15px;
-    background:#000;
 }
 
