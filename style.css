@@ -310,11 +310,11 @@ nav a:hover::after {
     min-width:0;
 }
 
-.demo-card video{
+.demo-card video,
+.project-card video{
     width:100%;
     height:180px;
     object-fit:cover;
-    border-radius:12px;
-    margin-top:15px;
+    border-radius:14px;
 }
 
